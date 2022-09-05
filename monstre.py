@@ -10,7 +10,7 @@ class Monster:
 
 
 #function
-def create_monster (pseudo, pv, force, armure):
+def generate_monster (pseudo, pv, force, armure):
     monster_object = Monster(pseudo, pv, force, armure)
     dictionnairy = {
         "Pseudo": monster_object.pseudo,
@@ -22,4 +22,4 @@ def create_monster (pseudo, pv, force, armure):
     return print(dictionnairy)
 
 #excecution
-create_monster("Vespoid", random.randint(5,20), random.randint(3,8), random.randint(0,5))
+generate_monster("Vespoid", random.randint(5,20), random.randint(3,8), random.randint(0,5))
